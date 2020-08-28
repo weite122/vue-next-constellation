@@ -1,15 +1,9 @@
-import Vue from 'vue'
 import Vuex from 'vuex'
+import state from './state'
+import mutations from './mutataions'
 
-Vue.use(Vuex)
+export default Vuex.createStore({
+  state,
+  mutations,
 
-export default new Vuex.Store({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
-  modules: {
-  }
-})
+});
